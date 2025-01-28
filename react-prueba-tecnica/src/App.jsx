@@ -1,19 +1,14 @@
 import './App.css'
-import React, { useEffect, useState } from 'react';
-import { getRandomFact } from './services/facts';
+import React from 'react';
 import { useCatImage } from './hooks/useCatlmage';
+import { useCatFact } from './hooks/useCatFact';
 
 
 export function App() {
-    const [fact, setFact] = useState()
+    const { fact, refreshRandomFact } = useCatFact()
     const { imageUrl } = useCatImage({ fact })
-
-    useEffect(() => {
-        getRandomFact(setFact)
-    }, [])
-
     const handleClick = () => {
-        getRandomFact(setFact)
+        refreshRandomFact()
     }
     return (
         <main>
