@@ -2,7 +2,7 @@ Enunciado
 Crea una aplicación para buscar películas
 
 API a usar: - https://www.omdbapi.com/ 
-API_KEY: b2e9b4a3 
+API_KEY:http://www.omdbapi.com/?i=tt3896198&apikey=b2e9b4a3
 Consigue la API Key en la propia página web registrando tu email.
 
 Requerimientos:
